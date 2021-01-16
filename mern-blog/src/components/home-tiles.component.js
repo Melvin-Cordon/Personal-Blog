@@ -63,6 +63,7 @@ export default class HomeTiles extends Component {
                    </div>
                 </div>
              </div>
+             <br/>
           </div>
 
         </div>
