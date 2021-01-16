@@ -5,25 +5,19 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-        <Link to="/" className="navbar-brand">Home</Link>
-        <div className="collpase navbar-collapse">
-        <ul className="navbar-nav mr-auto">
-          <li className="navbar-item">
-          <Link to="/" className="nav-link">Self-Studies</Link>
-          </li>
-          <li className="navbar-item">
-          <Link to="/create" className="nav-link">Projects</Link>
-          </li>
-          <li className="navbar-item">
-          <Link to="/user" className="nav-link">Resume</Link>
-          </li>
-          <li className="navbar-item">
-          <Link to="/Test" className="nav-link">About</Link>
-          </li>
-        </ul>
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-light p-4">
+            <h4 class="text-white">Collapsed content</h4>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+          </div>
         </div>
-      </nav>
+        <nav class="navbar navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
     );
   }
 }

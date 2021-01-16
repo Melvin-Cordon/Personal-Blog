@@ -41,6 +41,15 @@
 {
   border-radius: 20px 20px 0px 0px;
 }
+.card-image:hover {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all .01s ease;
+    -moz-transition: all .01s ease;
+    -o-transition: all .01s ease;
+    -ms-transition: all .01s ease;
+    transition: all .01s ease;
+    cursor:pointer
+}
 
 .card-edges
 {
